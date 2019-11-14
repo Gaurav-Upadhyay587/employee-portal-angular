@@ -1,2 +1,1 @@
-# employee-portal-angular
-Angular App
+# employee-portal-app
