@@ -23,8 +23,7 @@ export class EmployeeService {
   }
 
   fetchEmployeeList(): Observable<any> {
-    this.apiUrl = this.apiUrl.concat('/employees/v1.1/filters/firstName_asc');
-    console.log(this.apiUrl);
-    return this.http.get(this.apiUrl);
+	console.log(this.apiUrl);
+    return this.http.get(this.apiUrl + '/employees/v1.1/filters/firstName_asc');
   }
 }
