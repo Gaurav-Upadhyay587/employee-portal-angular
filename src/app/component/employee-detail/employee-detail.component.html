@@ -1,0 +1,31 @@
+<div class="container" style="padding-top:5px;">
+    <div class="row">
+        <div class="col-12 mx-auto">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Sex</th>
+                        <th scope="col">Department</th>
+                        <th scope="col">Date of Birth</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let e of data">
+                        <td>{{e.employeeId}}</td>
+                        <td>{{e.firstName}}</td>
+                        <td>{{e.lastName}}</td>
+                        <td>{{e.sex}}</td>
+                        <td>{{e.department}}</td>
+                        <td>{{e.dateOfBirth}}</td>
+                    </tr>
+                </tbody>
+            </table>         
+        </div>
+        <div class="col-12 ">
+                <button class="nav-item nav-link-edit" [routerLink]="['/register']">Registe New Employee</button >
+        </div>
+    </div>
+</div>
